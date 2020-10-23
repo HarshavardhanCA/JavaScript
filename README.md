@@ -1,1 +1,1 @@
-# Day1Assignment
+# JavaScript

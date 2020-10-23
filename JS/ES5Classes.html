@@ -1,0 +1,30 @@
+<html>
+    <script>
+        const obj={};;
+        obj.empName="Harsha C.A";
+        obj.empAddress="Kolar";
+        obj.empSalary=10000;
+
+        for(const key in obj){
+            console.log('key:${key},Its value:${obj[key]}');
+        }
+        console.log(JSON.stringify(obj));
+        const copy =obj;
+
+        copy.empAddress="Mysuru";
+        console.log(copy.empAddress)
+        console.log(copy.empAddress)
+    </script>
+    <body>
+        <ul id="lstNames"></ul>
+        <script>
+            let values=[
+                {"empName":"Gopal"},{"empName":"Suraj"},{"empName":"Kumar"},{"empName":"Gowda"}
+            ]
+            let ls=document.getElementById("lstNames");
+            for(const emp of values){
+                ls.innerHTML+='<li>${emp.empName}</li>';
+            }
+        </script>
+    </body>
+</html>

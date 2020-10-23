@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="classes.js"></script>
+    <script src="CommonFunctions.js"> </script>
+    <script>
+        const anotheremp = new employee(123,"Harsha C.A","Kolar");
+        console.log(JSON.stringify(anotheremp));
+        console.log(anotheremp.empname)
+        console.log(anotheremp.empAddres)
+        console.log(anotheremp.empid)
+
+        function displayRecords(){
+            let row="<tr><td>"+empobj.empid+"</td>";
+                row+="<td>"+empobj.empname+"</td>";
+                row+="<td>"+empobj.empAddress+"</td></tr>";
+                $get("tblRecords").innerHTML+=row;
+
+                row="<tr><td>"+anotheremp.empid+"</td>";
+                row+="<td>"+anotheremp.empname+"</td>";
+                row+="<td>"+anotheremp.empAddress+"</td></tr>";
+                $get("tblRecords").innerHTML+=row;
+        }
+    </script>
+</head>
+<body onload="displayRecords()">
+    <table id="tblRecords" border="1">
+        <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Address</th>
+        </tr>
+        </table>
+
+</body>
+</html>

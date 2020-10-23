@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+           /* const elements = ["Apple","Mango","Orange","Bananas"];
+            for(const element of elements){
+                console.log(element)
+            }
+            const names = new Array(5);
+            for(let index=0;index<names.length;index++){
+                names[index]=prompt("Enter the Name");
+            }
+            for(const element of names)
+            {
+                console.log(element);
+            }*/
+            //Blank Array
+           /* let basket=[];
+            let index=0;
+            do{
+                const item = prompt("Enter the Fruit to buy");
+                basket.push(item);
+                index++;
+            }while(index!=5);*/
+
+            let basket=[];
+            let index=0;
+            do{
+                const item = prompt("Enter the Fruit to buy");
+                basket.push(item);
+                index++;
+            }while(index!=5);
+
+        </script>
+    </head>
+    <body>
+        <h3>List of Fruits added </h3>
+        <ol type="1">
+            <script>
+                for(const item of basket)
+                {
+                    document.write("<li>"+ item +"</li>")
+                }
+            </script>
+        </ol>
+    </body>
+</html>

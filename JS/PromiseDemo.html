@@ -1,0 +1,34 @@
+<html>
+    <script>
+        function addNumbersAsync(v1,v2){
+            const p = new Promise((success,failure)=>{
+                if(v1>=0 && v2>=0)
+                {
+                    setTimeout(()=>{
+                        console.log("Atlast we got the Result");
+                        const result=v1+v2;
+                        success(result)
+                    },5000);
+                }else{
+                    failure("This function works only for positive numbers")
+                }
+            })
+            return p;
+        }
+        function onSuccess(data){
+            console.log("The added value is"+data);
+        }
+        function onFailure(err){
+            console.log(err);
+        }
+        addNumbersAsync(10,6)
+        .then(onSuccess)
+        .catch(onFailure)
+        
+        for(let index=0;index<10;index++){
+            console.log("Doing some other job"+index);
+            setTimeout(()=>{
+            },1000);
+        }
+    </script>
+</html>

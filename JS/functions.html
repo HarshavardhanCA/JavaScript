@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    function testFunc()
+    {
+       alert("test func is called");
+    }
+    testFunc();
+ 
+    const simpleFunc = function(){
+        alert("anonymous methods");
+    }
+    simpleFunc();
+ 
+    const addFunc = function(v1, v2){
+        return v1 + v2;
+    }
+    const checkForNumber = function(val)
+    {
+        if(isNaN(val))
+        return 0;
+        else
+        return parseInt(val);
+    }
+    const v1 = checkForNumber((prompt("enter the first value")));
+    const v2 = checkForNumber((prompt("enter the second value")));
+    const result = addFunc(v1,v2);
+    console.log("the addition value is " + result);
+    document.write(result);
+ 
+</script>
+</head>
+<body>
+    
+</body>
+</html>

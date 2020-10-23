@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title> Forms in HTML </title>
+        <style>
+              input,select{
+            background-color:lightseagreen;
+            border-radius: 10px;
+            width:200px;
+            color: lightyellow;
+        }
+        .gender{
+            width: auto;
+            background-color: lightskyblue;
+        }
+        </style>
+    </head>
+    <body> 
+        <h1>Forms in HTML </h1>
+        <hr>
+        <div>
+            <h2> Student Registration Form </h2>
+            <form>
+            <p>Enter the Name:<input type="text" placeholder ="Name Please"> </p>
+            <p>Enter the Email ID:<input type="email" placeholder ="Email ID Please "> </p>
+            <p>Enter the DOB:<input type="date"> </p>
+            <p>Gender: 
+                <input class ="gender" type="radio" name="gender"/>male
+                <input class ="gender" type="radio" name="gender"/>female
+                <input class ="gender" type="radio" name="gender"/>other
+            </p>
+            <p>Education: 
+                <select >
+                    <option>Select Degree</option>
+                    <option>MBA</option>
+                    <option>Engineering</option>
+                    <option>Masters</option>
+                </select>
+            </p>
+            <P>
+                <datalist id="lastcities">
+                    <option>Kolar</option>
+                    <option>Bengaluru</option>
+                    <option>Mysuru</option>
+                    <option>Mangaluru</option>
+                    <option>Hubballi</option>
+                </datalist>
+            </P> 
+            <p>Rate our Website:<input type="range" min="1" max="10" step1="1"/></p>
+            <p>Search:<input type="search" placeholder="Search Here"> </p>
+            <P><button>Submit</button></P>
+            </form>
+        </div>
+    </body>
+</html>
